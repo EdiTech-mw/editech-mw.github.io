@@ -26,6 +26,7 @@
 			div {
 				font-size: 16px;
 				font-family: 'Courier New', Courier, monospace;
+				width:100%
 			}	
 		}
 		@media (min-width: 731px) {
@@ -38,18 +39,29 @@
 			div {
 				font-size: 16px;
 				font-family: 'Courier New', Courier, monospace;
+				width: 100%
 			}	
 		}
 		.back-box {
 			background-color: #2E2E2EBF;
-			border-radius: 10px;
-			width: 75%;
+			width: 100%;
+			padding-bottom: 14%;
+		}
+		#box1 {
+			border-radius: 10px 0 0 10px;
+		}
+		#box2 {
+			border-radius: 0 10px 10px 0;
+			border-left: 5px ridge aqua;
 		}
 		hr {
-			width: 75%
+			width: 100%
 		}
 		a {
 			color: aqua;
+		}
+		flex {
+			display: flex;
 		}
 	</style>
 </head>
@@ -57,16 +69,32 @@
 <body>
 	<h1 id="hi1" class="hidden" align="center">Welcome!</h1>
 	<h2 id="hi2" class="hidden" align="center">I'm the splash text, with no text to splash...</h2>
-	<div align="center"><div align="center" class="back-box info hidden">
-		Enhanced Bytebeat<br>
-		<a href="https://chasyxx.github.io/Enhanced-Bytebeat" target="_blank" align="center">(Old version)</a>
-		<a href="https://chasyxx.github.io/EnBeat_NEW" target="_blank" align="center">(New version)</a>
-	</div><hr><div align="center" class="back-box info hidden">
-			<a href="https://chasyxx.github.io/minibaker" target="_blank" align="center">Minibaker</a>
-			<a href="https://chasyxx.github.io/ChyxTools" target="_blank" align="center">Tools</a>
-			<a href="https://chasyxx.github.io/ScriptedCanvas" target="_blank" align="center">Scripted Canvas</a>
-	</div><hr><div align="center" class="back-box info hidden">
-		<a href="https://www.youtube.com/@C-mirror" target="_blank" align="center">YouTube</a>
-		<a href="https://www.github.com/chasyxx" target="_blank" align="center">GitHub</a>
-</div>
+	<br>
+	<div>
+		<flex>
+			<div align="center" class="back-box info hidden" id="box1">
+				<h2>Links</h2>
+				<hr>
+				<div class="info hidden">Enhanced Bytebeat<br>
+				<a href="https://chasyxx.github.io/Enhanced-Bytebeat" align="center">(Old version)</a>
+				<a href="https://chasyxx.github.io/EnBeat_NEW" align="center">(New version)</a>
+				</div>
+				<hr>
+				<div class="info hidden">
+				<a href="https://chasyxx.github.io/minibaker" align="center">Minibaker</a>
+				<a href="https://chasyxx.github.io/ChyxTools" align="center">Tools</a>
+				<a href="https://chasyxx.github.io/ScriptedCanvas" align="center">Scripted Canvas</a>
+				</div>
+			</div>
+			<div align="center" class="back-box info hidden" id="box2">
+				<h2>Media</h2>
+				<hr>
+				<div class="info hidden">
+				<a href="https://www.youtube.com/@C-mirror" target="_blank" align="center">YouTube</a>
+				<a href="https://www.github.com/chasyxx" target="_blank" align="center">GitHub</a>
+				</div>
+			</div>
+		</flex>
+	</div>
+</body>
 </html>
