@@ -12,7 +12,7 @@ let x1 = document.getElementById('hi1');
 let x2 = document.getElementById('hi2');
 let info = document.getElementsByClassName('info')
 
-await new Promise(resolve => { $(document).ready(resolve) }) // Wait for jQuery to load
+await new Promise(resolve => { $(document).ready(resolve) }) // Wait for jQuery to finish activating
 
 x2.onclick = async () => {
 	await new Promise(resolve => { $(x2).animate({ opacity: '0' }, 250, "swing", resolve) })
