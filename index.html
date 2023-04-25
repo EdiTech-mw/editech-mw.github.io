@@ -1,57 +1,72 @@
 <!DOCTYPE html>
+<html>
 
-<html lang="en-us">
-    <head>
-        <title>Chyxpage</title>
-        <style>
-            body {
-                background-image: url("image.png");
-                color: #00FF00;
-                font-size: 60px;
-            }
-            @font-face {
-            font-family: "retro";
-            src: url(Prisma.ttf) format("truetype");
-            }
-            h1{
-                font-family: "retro";
-                font-size: 120px;
-                color: #00C060;
-            }
-            h2{
-                font-family: "retro";
-                font-size: 80px;
-                color: #00E040;
-            }
-            p {
-                font-family: courier; 
-                font-size: 20px;
-            }
-            a {
-                font-family: courier; 
-                font-size: 20px;
-                color: #3FFF7F
-            }
-        </style>
-        <!--SCRIPTING-->
-        <!--script src="init.js"></script-->
-        <!--SCRIPTING END-->
-    </head>
-    <body>
-        <!--SCRIPTING-->
-        <!--SCRIPTING END-->
-        <div align="center">
-            <div align="center" style="background-color:#00000080;width: 512px;">
-                <h2>chyx</h2>
-                <a target="_blank" href="https://chasyxx.github.io/Enhanced-Bytebeat/">Enhanced-bytebeat (OLD)</a>
-                <a target="_blank" href="https://chasyxx.github.io/EnBeat_NEW/">(NEW)</a>
-                <a target="_blank" href="https://chasyxx.github.io/minibaker/">Minibaker</a>
-                <a                 href="https://github.com/Chasyxx">Github</a>
-                <hr>
-                <a target="_blank" href="https://chasyxx.github.io/EnBeatBeta4/">beta4</a>
-                <a target="_blank" href="https://chasyxx.github.io/EnBeatBeta3/">beta3</a>
-                <!--a href="https://example.com">_</a-->
-            </div>
-        </div>
-    </body>
+<head>
+	<script type="module" src="script.js"></script>
+	<style>
+		@font-face {
+			font-family: prisma;
+			src: url(Prisma.ttf);
+		}
+		.hidden {
+			opacity: 0;
+		}
+		body {
+			background-image: url("image.png");
+			font-family: prisma;
+			color: #44eb5a;
+		}
+		@media (max-width: 730px) {
+			h1 {
+				font-size: 48px;
+			}
+			h2 {
+				font-size: 24px;
+			}
+			div {
+				font-size: 16px;
+				font-family: 'Courier New', Courier, monospace;
+			}	
+		}
+		@media (min-width: 731px) {
+			h1 {
+				font-size: 64px;
+			}
+			h2 {
+				font-size: 32px;
+			}
+			div {
+				font-size: 16px;
+				font-family: 'Courier New', Courier, monospace;
+			}	
+		}
+		.back-box {
+			background-color: #2E2E2EBF;
+			border-radius: 10px;
+			width: 75%;
+		}
+		hr {
+			width: 75%
+		}
+		a {
+			color: aqua;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 id="hi1" class="hidden" align="center">Welcome!</h1>
+	<h2 id="hi2" class="hidden" align="center">I'm the splash text, with no text to splash...</h2>
+	<div align="center"><div align="center" class="back-box info hidden">
+		Enhanced Bytebeat<br>
+		<a href="https://chasyxx.github.io/Enhanced-Bytebeat" target="_blank" align="center">(Old version)</a>
+		<a href="https://chasyxx.github.io/EnBeat_NEW" target="_blank" align="center">(New version)</a>
+	</div><hr><div align="center" class="back-box info hidden">
+			<a href="https://chasyxx.github.io/minibaker" target="_blank" align="center">Minibaker</a>
+			<a href="https://chasyxx.github.io/ChyxTools" target="_blank" align="center">Tools</a>
+			<a href="https://chasyxx.github.io/scriptedCanvas" target="_blank" align="center">Scripted Canvas</a>
+	</div><hr><div align="center" class="back-box info hidden">
+		<a href="https://www.youtube.com/@C-mirror" target="_blank" align="center">YouTube</a>
+		<a href="https://www.github.com/chasyxx" target="_blank" align="center">GitHub</a>
+</div>
 </html>
