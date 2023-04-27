@@ -12,9 +12,11 @@
 			opacity: 0;
 		}
 		body {
-			background-image: url("image.png");
+			background-image: linear-gradient(to bottom, #000, #020);
+			background-color: #020;
 			font-family: prisma;
 			color: #44eb5a;
+			background-repeat: no-repeat;
 		}
 		@media (max-width: 730px) {
 			h1 {
@@ -48,7 +50,8 @@
 				width: 100%
 			}	
 			flex {
-			display: flex;
+				display: flex;
+				height: fit-content;
 			}
 			#box1 {
 				border-radius: 10px 0 0 10px;
@@ -69,11 +72,15 @@
 		a {
 			color: aqua;
 		}
+		.fill {
+			height: fit-content
+		}
 	</style>
+	<title>CHASYXX PAGE</title>
 </head>
 
 <body>
-	<h1 id="hi1" class="hidden" align="center">Welcome!</h1>
+	<h1 id="hi1"  align="center"></h1>
 	<h2 id="hi2" class="hidden" align="center">I'm the splash text, with no text to splash...</h2>
 	<br>
 	<div>
@@ -82,22 +89,22 @@
 				<h2>Links</h2>
 				<hr>
 				<div class="info hidden">Enhanced Bytebeat<br>
-				<a href="https://chasyxx.github.io/Enhanced-Bytebeat" align="center">(Old version)</a>
-				<a href="https://chasyxx.github.io/EnBeat_NEW" align="center">(New version)</a>
+				<a href="https://chasyxx.github.io/Enhanced-Bytebeat">(Old version)</a>
+				<a href="https://chasyxx.github.io/EnBeat_NEW">(New version)</a>
 				</div>
 				<hr>
 				<div class="info hidden">
-				<a href="https://chasyxx.github.io/minibaker" align="center">Minibaker</a>
-				<a href="https://chasyxx.github.io/ChyxTools" align="center">Tools</a>
-				<a href="https://chasyxx.github.io/ScriptedCanvas" align="center">Scripted Canvas</a>
+				<a href="https://chasyxx.github.io/minibaker">Minibaker</a>
+				<a href="https://chasyxx.github.io/ChyxTools">Tools</a>
+				<a href="https://chasyxx.github.io/ScriptedCanvas">Scripted Canvas</a>
 				</div>
 			</div>
 			<div align="center" class="back-box info hidden" id="box2">
 				<h2>Media</h2>
 				<hr>
 				<div class="info hidden">
-				<a href="https://www.youtube.com/@C-mirror" target="_blank" align="center">YouTube</a>
-				<a href="https://www.github.com/chasyxx" target="_blank" align="center">GitHub</a>
+				<a href="https://www.youtube.com/@C-mirror" target="_blank">YouTube</a>
+				<a href="https://www.github.com/chasyxx" target="_blank">GitHub</a>
 				</div>
 			</div>
 		</flex>
