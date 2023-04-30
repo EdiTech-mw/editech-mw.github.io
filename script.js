@@ -14,7 +14,8 @@ const splashes = [
 	"dum de dum...",
 	"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
 	"Spot the references in these splashtexts!",
-	"<i>A TypeScript (TS) enum is a special type in TypeScript that allows you to define a set of named constants. Enums can be thought of as a collection of related values that are easier to read and maintain than plain strings or numbers. They can be used to improve the readability of your code by providing a set of clear, distinct values that can be used in place of numbers or strings.</i><br> &mdash;ChatGPT"
+	"<i>A TypeScript (TS) enum is a special type in TypeScript that allows you to define a set of named constants. Enums can be thought of as a collection of related values that are easier to read and maintain than plain strings or numbers. They can be used to improve the readability of your code by providing a set of clear, distinct values that can be used in place of numbers or strings.</i><br> &mdash;ChatGPT",
+	"<sup>&quot;return constant(abs(Z.real),abs(Z.imag)).powerTo(2).add(C.real,C.imag)&quot;<sup><br>Oh no! Our ship's burning down!!"
 ]
 
 let x1 = document.getElementById('hi1');
